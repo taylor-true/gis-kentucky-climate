@@ -3,21 +3,57 @@
 <head>
     <title>Combined Interactive Maps</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            padding: 20px 0;
+        }
         iframe {
             width: 100%;
-            height: 600px;
+            height: 500px;
             border: none;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .description {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>KY Interactive Map: School Climate</h1>
-    <iframe src="KY_SchoolClimateMap.html"></iframe>
-    
-    <h1>KY Interactive Map: % Novice</h1>
-    <iframe src="KY_NoviceMap.html"></iframe>
-
-      <h1>KY Interactive Map: % Apprentice</h1>
-    <iframe src="KY_ApprenticeMap.html"></iframe>
+    <div class="container">
+        <h1>KY Interactive Maps</h1>
+        <div class="description">
+            <p>Interactive GIS widgets displaying public-access aggregated school data in Kentucky for 2022-2023, by County.</p>
+            <ul>
+                <li><strong>School Climate:</strong>Aggregate School Climate Index.</li>
+                <li><strong>% Novice:</strong>Percentage of students scoring 'Novice' on KY State Assessments</li>
+                <li><strong>% Apprentice:</strong>Percentage of students scoring 'Apprentice' on KY State Assessments.</li>
+            </ul>
+        </div>
+        <h1>KY Interactive Map: School Climate</h1>
+        <iframe src="KY_SchoolClimateMap.html"></iframe>
+        
+        <h1>KY Interactive Map: % Novice</h1>
+        <iframe src="KY_NoviceMap.html"></iframe>
+        
+        <h1>KY Interactive Map: % Apprentice</h1>
+        <iframe src="KY_ApprenticeMap.html"></iframe>
+    </div>
 </body>
 </html>
